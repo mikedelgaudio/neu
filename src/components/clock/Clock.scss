@@ -1,5 +1,6 @@
 @import 'styles/keyframes';
 @import 'styles/breakpoints';
+@import 'styles/colors';
 
 .neu-container {
   position: relative;
@@ -95,7 +96,7 @@
   position: absolute;
   width: 8px;
   height: 80px;
-  background: #ff105e;
+  background: $yellow-gradient;
   z-index: 1;
   border-radius: 6px;
 }

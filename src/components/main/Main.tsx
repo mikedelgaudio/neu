@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Clock from '../clock/Clock';
+import SettingsMenu from '../settings-menu/SettingsMenu';
 import './Main.scss';
 class Main extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Main extends Component {
     return (
       <>
         <Clock />
+        <SettingsMenu />
       </>
     );
   }
