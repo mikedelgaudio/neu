@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+import './Footer.scss';
 
 class Footer extends Component {
   constructor(props) {
@@ -6,7 +7,11 @@ class Footer extends Component {
     this.state = {};
   }
   render() {
-    return <></>;
+    return (
+      <>
+        <div className="add"></div>
+      </>
+    );
   }
 }
 
