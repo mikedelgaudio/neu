@@ -5,21 +5,31 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 1.5rem;
   z-index: 1;
+  display: flex;
+  align-items: baseline;
+  margin: 2rem 0 0 1.5rem;
+}
 
-  h1 {
-    color: $white;
-    font-weight: lighter;
-    transition: font-size 0.5s ease-in-out;
-    font-size: 2.5rem;
-  }
+.neu-header--title {
+  color: $white;
+  font-weight: bold;
+  transition: font-size 0.5s ease-in-out;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.neu-header--subtitle {
+  color: $white;
+  font-weight: lighter;
+  transition: font-size 0.5s ease-in-out;
+  font-size: 1.25rem;
+  margin: 0;
+  padding-left: 0.5rem;
 }
 
 @include media-breakpoint-up(md) {
-  .neu-header {
-    h1 {
-      font-size: 3.5rem;
-    }
+  h1 {
+    font-size: 3.5rem;
   }
 }

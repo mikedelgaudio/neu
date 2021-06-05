@@ -13,7 +13,7 @@ class SettingsMenu extends Component {
       <>
         <div className="settings">
           <div className="settings__menu">
-            <h2>Settings</h2>
+            <h2 className="settings__menu--header">Settings</h2>
             <ul className="settings__list">
               <li className="settings__list--item">
                 Color Choice 1{' '}

@@ -13,6 +13,11 @@
   right: 1rem;
   max-width: 16rem;
   width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.settings__menu--header {
+  margin-top: 0;
 }
 
 .settings__list {
@@ -27,6 +32,9 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  &:last-child {
+    padding: 0;
+  }
 }
 
 .settings__list--item-toggle {
@@ -39,7 +47,7 @@
   right: 0;
   cursor: pointer;
   padding: 1rem;
-  opacity: 0.6;
+  opacity: 0.75;
   transition: all 0.5s ease-in-out;
   color: $white;
 }

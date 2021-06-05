@@ -9,7 +9,8 @@ class Navbar extends Component {
     return (
       <>
         <header className="neu-header">
-          <h1>Neu</h1>
+          <h1 className="neu-header--title">Neu</h1>
+          <h2 className="neu-header--subtitle">your tasks, simplified.</h2>
         </header>
       </>
     );
