@@ -1,13 +1,15 @@
-import { Component } from 'react';
+import { RootStateOrAny, useSelector } from 'react-redux';
+import TodoItem from './TodoItem/TodoItem';
 
-class TodoList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return <p>List</p>;
-  }
-}
+const TodoList = () => {
+  const todos = useSelector((state: RootStateOrAny) => state.todos);
+  return (
+    <ul className="todo__list-group">
+      {todos.map((todo) => (
+        <TodoItem key={todo.id} id={todo.id} title={todo.title} completed={todo.completed} />
+      ))}
+    </ul>
+  );
+};
 
 export default TodoList;
