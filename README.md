@@ -1,6 +1,6 @@
 # Neu
 
-### your tasks, simplified.
+### your tasks, remade.
 
 
 ## Development
