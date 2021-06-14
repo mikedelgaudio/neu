@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// Creating starting todo slice 
+// double check to make sure not deprecated
 const todoSlice = createSlice({
   name: 'todos',
   initialState: [
