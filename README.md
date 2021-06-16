@@ -2,6 +2,10 @@
 
 ### your tasks, remade.
 
+## Tech Used:
+- React
+- SCSS
+- Redux
 
 ## Development
 - Clone the repository 
