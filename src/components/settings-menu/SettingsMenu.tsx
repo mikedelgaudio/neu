@@ -1,55 +1,56 @@
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Component } from 'react';
+import { useState } from 'react';
 import './SettingsMenu.scss';
 
-class SettingsMenu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <>
-        <div className="settings">
-          <div className="settings__menu">
-            <h2 className="settings__menu--header">Settings</h2>
-            <ul className="settings__list">
-              <li className="settings__list--item">
-                Color Choice 1{' '}
-                <div className="settings__list--item-toggle">
-                  <input type="checkbox" id="switch" />
-                  <label>Toggle</label>
-                </div>
-              </li>
-              <li className="settings__list--item">
-                Color Choice 2{' '}
-                <div className="settings__list--item-toggle">
-                  <input type="checkbox" id="switch" />
-                  <label>Toggle</label>
-                </div>
-              </li>
-              <li className="settings__list--item">
-                Color Choice 3{' '}
-                <div className="settings__list--item-toggle">
-                  <input type="checkbox" id="switch" />
-                  <label>Toggle</label>
-                </div>
-              </li>
-              <li className="settings__list--item">
-                Color Choice 4{' '}
-                <div className="settings__list--item-toggle">
-                  <input type="checkbox" id="switch" />
-                  <label>Toggle</label>
-                </div>
-              </li>
-            </ul>
+const Menu = () => {
+  return (
+    <div className="settings__menu">
+      <h2 className="settings__menu--header">Settings</h2>
+      <ul className="settings__list">
+        <li className="settings__list--item">
+          Color Choice 1{' '}
+          <div className="settings__list--item-toggle">
+            <input type="checkbox" id="switch" />
+            <label>Toggle</label>
           </div>
-          <FontAwesomeIcon className="settings__icon" role="button" icon={faCog} />
-        </div>
-      </>
-    );
-  }
-}
+        </li>
+        <li className="settings__list--item">
+          Color Choice 2{' '}
+          <div className="settings__list--item-toggle">
+            <input type="checkbox" id="switch" />
+            <label>Toggle</label>
+          </div>
+        </li>
+        <li className="settings__list--item">
+          Color Choice 3{' '}
+          <div className="settings__list--item-toggle">
+            <input type="checkbox" id="switch" />
+            <label>Toggle</label>
+          </div>
+        </li>
+        <li className="settings__list--item">
+          Color Choice 4{' '}
+          <div className="settings__list--item-toggle">
+            <input type="checkbox" id="switch" />
+            <label>Toggle</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+const SettingsMenu = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => setShowMenu(!showMenu);
+
+  return (
+    <div className="settings">
+      {showMenu ? <Menu /> : null}
+      <FontAwesomeIcon className="settings__icon" role="button" icon={faCog} onClick={toggleMenu} />
+    </div>
+  );
+};
 
 export default SettingsMenu;

@@ -11,7 +11,6 @@ class Main extends Component {
   render() {
     return (
       <>
-        <Todo />
         <Clock />
         <SettingsMenu />
       </>
