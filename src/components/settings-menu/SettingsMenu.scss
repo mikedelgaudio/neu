@@ -6,7 +6,7 @@
 
 .settings__menu {
   background: $white;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 15px;
   position: absolute;
   bottom: 4rem;
@@ -31,13 +31,10 @@
   padding: 0 0 1rem 0;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   &:last-child {
     padding: 0;
   }
-}
-
-.settings__list--item-toggle {
 }
 
 .settings__icon {

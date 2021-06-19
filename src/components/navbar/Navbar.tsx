@@ -10,7 +10,7 @@ class Navbar extends Component {
       <>
         <header className="neu-header">
           <h1 className="neu-header--title">Neu</h1>
-          <h2 className="neu-header--subtitle">your tasks, simplified.</h2>
+          <h2 className="neu-header--subtitle">vibes, simplified.</h2>
         </header>
       </>
     );

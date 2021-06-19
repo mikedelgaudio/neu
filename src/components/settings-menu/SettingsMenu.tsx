@@ -2,40 +2,17 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import './SettingsMenu.scss';
+import Switch from './switch/Switch';
 
 const Menu = () => {
   return (
     <div className="settings__menu">
       <h2 className="settings__menu--header">Settings</h2>
       <ul className="settings__list">
-        <li className="settings__list--item">
-          Color Choice 1{' '}
-          <div className="settings__list--item-toggle">
-            <input type="checkbox" id="switch" />
-            <label>Toggle</label>
-          </div>
-        </li>
-        <li className="settings__list--item">
-          Color Choice 2{' '}
-          <div className="settings__list--item-toggle">
-            <input type="checkbox" id="switch" />
-            <label>Toggle</label>
-          </div>
-        </li>
-        <li className="settings__list--item">
-          Color Choice 3{' '}
-          <div className="settings__list--item-toggle">
-            <input type="checkbox" id="switch" />
-            <label>Toggle</label>
-          </div>
-        </li>
-        <li className="settings__list--item">
-          Color Choice 4{' '}
-          <div className="settings__list--item-toggle">
-            <input type="checkbox" id="switch" />
-            <label>Toggle</label>
-          </div>
-        </li>
+        <li className="settings__list--item">Color Choice 1 {<Switch name="lightmode" />}</li>
+        <li className="settings__list--item">Color Choice 2 {<Switch name="darkmode" />}</li>
+        <li className="settings__list--item">Color Choice 3 {<Switch name="neumode" />}</li>
+        <li className="settings__list--item">Color Choice 4 {<Switch name="starwarsmode" />}</li>
       </ul>
     </div>
   );
