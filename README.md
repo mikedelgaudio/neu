@@ -1,6 +1,6 @@
 # Neu
 
-### your tasks, remade.
+### your tasks, redone.
 
 ## Tech Used:
 - React
