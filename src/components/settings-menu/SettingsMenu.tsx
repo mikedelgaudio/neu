@@ -9,8 +9,8 @@ const Menu = () => {
     <div className="settings__menu">
       <h2 className="settings__menu--header">Settings</h2>
       <ul className="settings__list">
-        <li className="settings__list--item">Color Choice 1 {<Switch name="lightmode" />}</li>
-        <li className="settings__list--item">Color Choice 2 {<Switch name="darkmode" />}</li>
+        <li className="settings__list--item">Color Choice 1 {<Switch name="lightmode" checked="false" />}</li>
+        <li className="settings__list--item">Color Choice 2 {<Switch name="darkmode" checked="false" />}</li>
         <li className="settings__list--item">Color Choice 3 {<Switch name="neumode" />}</li>
         <li className="settings__list--item">Color Choice 4 {<Switch name="starwarsmode" />}</li>
       </ul>

@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import { RootStateOrAny, useSelector } from 'react-redux';
+import store from '../../../redux/store';
+import { changeTheme } from '../../../redux/themeSlice';
 import './Switch.scss';
 
 const Switch = (props) => {
-  // Need Redux
-  const [showToggle, setShowToggle] = useState(false);
-  const flipToggle = (e) => {
-    console.log(e);
-    setShowToggle(!showToggle);
+  const selected = useSelector((state: RootStateOrAny) => state.themes.selected);
+  const showToggle = props.name === selected;
+  const flipToggle = (id) => {
+    if (id === selected && !showToggle) {
+      store.dispatch(changeTheme(id));
+    } else {
+      store.dispatch(changeTheme(id));
+    }
   };
 
   return (
