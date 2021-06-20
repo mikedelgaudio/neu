@@ -8,6 +8,8 @@ const Switch = (props) => {
   const showToggle = props.name === selected;
   const flipToggle = (id) => {
     if (id === selected && !showToggle) {
+      document.documentElement.className = '';
+      document.documentElement.classList.add(`theme-${id}`);
       store.dispatch(changeTheme(id));
     } else {
       store.dispatch(changeTheme(id));

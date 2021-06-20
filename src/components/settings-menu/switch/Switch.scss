@@ -1,3 +1,6 @@
+@import 'styles/mixins';
+@import 'styles/color-palette';
+
 .settings__list--item-toggle {
   display: inline-block;
   height: 34px;
@@ -14,7 +17,7 @@
   }
 
   .slider {
-    background-color: #ccc;
+    @include theme-aware('background-color', 'color-toggle-bg');
     bottom: 0;
     cursor: pointer;
     left: 0;
