@@ -9,7 +9,7 @@ const Menu = () => {
   const themeList = useSelector((state: RootStateOrAny) => state.themes.list);
   return (
     <div className="settings__menu">
-      <h2 className="settings__menu--header">Settings</h2>
+      <h2 className="settings__menu--header">Themes</h2>
       <ul className="settings__list">
         {themeList.map((theme) => {
           return (
