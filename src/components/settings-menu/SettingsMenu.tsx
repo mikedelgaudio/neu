@@ -1,18 +1,23 @@
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { RootStateOrAny, useSelector } from 'react-redux';
 import './SettingsMenu.scss';
 import Switch from './switch/Switch';
 
 const Menu = () => {
+  const themeList = useSelector((state: RootStateOrAny) => state.themes.list);
   return (
     <div className="settings__menu">
       <h2 className="settings__menu--header">Settings</h2>
       <ul className="settings__list">
-        <li className="settings__list--item">Color Choice 1 {<Switch name="lightmode" checked="false" />}</li>
-        <li className="settings__list--item">Color Choice 2 {<Switch name="darkmode" checked="false" />}</li>
-        <li className="settings__list--item">Color Choice 3 {<Switch name="neumode" />}</li>
-        <li className="settings__list--item">Color Choice 4 {<Switch name="starwarsmode" />}</li>
+        {themeList.map((theme) => {
+          return (
+            <li className="settings__list--item" key={theme.id}>
+              {theme.title} {<Switch name={theme.name} key={theme.id} />}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
