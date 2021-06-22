@@ -6,6 +6,8 @@ class Clock extends Component {
     super(props);
     this.state = {};
   }
+
+  //useEffect
   componentDidMount = () => {
     this.calculateTime();
   };
