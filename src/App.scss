@@ -18,7 +18,13 @@ $angle-2: 160deg;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient($angle-1, $red-gradient, $red-gradient 50%, $yellow-gradient 50%, $yellow-gradient);
+  background: linear-gradient(
+    $angle-1,
+    var(--angle-bottom),
+    var(--angle-bottom) 50%,
+    var(--angle-right) 50%,
+    var(--angle-right)
+  );
 }
 
 // .neu-frame::after {

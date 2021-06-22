@@ -96,7 +96,7 @@
   position: absolute;
   width: 8px;
   height: 80px;
-  background: $yellow-gradient;
+  background: var(--clock-hour);
   z-index: 1;
   border-radius: 6px;
 }
@@ -106,7 +106,7 @@
   position: absolute;
   width: 4px;
   height: 90px;
-  background: #fff;
+  background: var(--clock-minute);
   z-index: 2;
   border-radius: 6px;
 }
@@ -116,10 +116,7 @@
   position: absolute;
   width: 2px;
   height: 150px;
-  background: #fff;
+  background: var(--clock-second);
   z-index: 2;
   border-radius: 6px;
-}
-
-@include media-breakpoint-up(sm) {
 }

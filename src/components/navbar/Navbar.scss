@@ -12,7 +12,7 @@
 }
 
 .neu-header--title {
-  color: $white;
+  color: var(--brand);
   font-weight: bold;
   transition: font-size 0.5s ease-in-out;
   font-size: 2.5rem;
@@ -20,7 +20,7 @@
 }
 
 .neu-header--subtitle {
-  color: $white;
+  color: var(--brand);
   font-weight: lighter;
   transition: font-size 0.5s ease-in-out;
   font-size: 1.25rem;

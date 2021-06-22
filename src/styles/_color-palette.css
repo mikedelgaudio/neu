@@ -1,0 +1,96 @@
+* {
+  /* light */
+  --brand-light: #fff;
+  --menu-light: #03a9f4;
+  --toggle-bg-light: #ccc;
+  --toggle-inactive-light: #fff;
+  --toggle-active-light: #ffc107;
+  --angle-bottom-light: #e91e63;
+  --angle-right-light: #ffc107;
+  --angle-top-light: #03a9f4;
+  --clock-minute-light: #ffc107;
+  --clock-second-light: #fff;
+  --clock-hour-light: #fff;
+
+  /* dark */
+  --brand-dark: #fff;
+  --menu-dark: #353535;
+  --toggle-bg-dark: #284b63;
+  --toggle-inactive-dark: #fff;
+  --toggle-active-dark: #3c6e71;
+  --angle-bottom-dark: #353535;
+  --angle-right-dark: #3c6e71;
+  --angle-top-dark: #284b63;
+  --clock-minute-dark: #3c6e71;
+  --clock-second-dark: #d9d9d9;
+  --clock-hour-dark: #d9d9d9;
+}
+
+:root {
+  color-scheme: light;
+
+  /* set defaults */
+  --brand: var(--brand-light);
+  --menu: var(--menu-light);
+  --toggle-bg: var(--toggle-bg-light);
+  --toggle-inactive: var(--toggle-inactive-light);
+  --toggle-active: var(--toggle-active-light);
+  --angle-bottom: var(--angle-bottom-light);
+  --angle-right: var(--angle-right-light);
+  --angle-top: var(--angle-top-light);
+  --clock-minute: var(--clock-minute-light);
+  --clock-second: var(--clock-second-light);
+  --clock-hour: var(--clock-hour-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    /* dark variant */
+    --brand: var(--brand-dark);
+    --menu: var(--menu-dark);
+    --toggle-bg: var(--toggle-bg-dark);
+    --toggle-inactive: var(--toggle-inactive-dark);
+    --toggle-active: var(--toggle-active-dark);
+    --angle-bottom: var(--angle-bottom-dark);
+    --angle-right: var(--angle-right-dark);
+    --angle-top: var(--angle-top-dark);
+    --clock-minute: var(--clock-minute-dark);
+    --clock-second: var(--clock-second-dark);
+    --clock-hour: var(--clock-hour-dark);
+  }
+}
+
+.lightmode {
+  color-scheme: light;
+
+  --brand: var(--brand-light);
+  --menu: var(--menu-light);
+  --toggle-bg: var(--toggle-bg-light);
+  --toggle-inactive: var(--toggle-inactive-light);
+  --toggle-active: var(--toggle-active-light);
+  --angle-bottom: var(--angle-bottom-light);
+  --angle-right: var(--angle-right-light);
+  --angle-top: var(--angle-top-light);
+  --clock-minute: var(--clock-minute-light);
+  --clock-second: var(--clock-second-light);
+  --clock-hour: var(--clock-hour-light);
+}
+
+.darkmode {
+  color-scheme: dark;
+
+  /* dark variant */
+  --brand: var(--brand-dark);
+  --menu: var(--menu-dark);
+  --toggle-bg: var(--toggle-bg-dark);
+  --toggle-inactive: var(--toggle-inactive-dark);
+  --toggle-active: var(--toggle-active-dark);
+  --angle-bottom: var(--angle-bottom-dark);
+  --angle-right: var(--angle-right-dark);
+  --angle-top: var(--angle-top-dark);
+  --clock-minute: var(--clock-minute-dark);
+  --clock-second: var(--clock-second-dark);
+  --clock-hour: var(--clock-hour-dark);
+}
