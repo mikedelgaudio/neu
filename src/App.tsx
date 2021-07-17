@@ -9,6 +9,7 @@ const App = () => {
 
   return (
     <div className={currentTheme + ' neu-frame'}>
+      {currentTheme === 'starwarsmode' ? <div className="stars"></div> : null}
       <Navbar />
       <Main />
       <Footer />

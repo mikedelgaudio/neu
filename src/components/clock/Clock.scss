@@ -24,8 +24,10 @@
   backdrop-filter: blur(1.5rem);
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  animation: animate 5s ease-in-out infinite;
-  animation-delay: -2.5s;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: -2.5s;
+  }
 }
 
 .clock {
@@ -37,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(transparent, rgba(255, 255, 255, 0.2)), url('http://localhost:3000/assets/clock.png');
+  background: radial-gradient(transparent, rgba(255, 255, 255, 0.2)), url(../../assets/clock.png);
   background-size: cover;
   border-radius: 50%;
   backdrop-filter: blur(1.5rem);
