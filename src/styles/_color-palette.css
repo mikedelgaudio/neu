@@ -1,29 +1,55 @@
 * {
   /* light */
-  --brand-light: #fff;
-  --menu-light: #03a9f4;
-  --toggle-bg-light: #ccc;
-  --toggle-inactive-light: #fff;
-  --toggle-active-light: #ffc107;
-  --angle-bottom-light: #e91e63;
-  --angle-right-light: #ffc107;
-  --angle-top-light: #03a9f4;
-  --clock-minute-light: #ffc107;
-  --clock-second-light: #fff;
-  --clock-hour-light: #fff;
+  --brand-light: hsl(0, 0%, 100%);
+  --menu-light: hsl(199, 98%, 48%);
+  --toggle-bg-light: hsl(0, 0%, 80%);
+  --toggle-inactive-light: hsl(0, 0%, 100%);
+  --toggle-active-light: hsl(45, 100%, 51%);
+  --angle-bottom-light: hsl(340, 82%, 52%);
+  --angle-right-light: hsl(45, 100%, 51%);
+  --angle-top-light: hsl(199, 98%, 48%);
+  --clock-minute-light: hsl(45, 100%, 51%);
+  --clock-second-light: hsl(0, 0%, 100%);
+  --clock-hour-light: hsl(0, 0%, 100%);
 
   /* dark */
-  --brand-dark: #fff;
-  --menu-dark: #353535;
-  --toggle-bg-dark: #284b63;
-  --toggle-inactive-dark: #fff;
-  --toggle-active-dark: #3c6e71;
-  --angle-bottom-dark: #353535;
-  --angle-right-dark: #3c6e71;
-  --angle-top-dark: #284b63;
-  --clock-minute-dark: #3c6e71;
-  --clock-second-dark: #d9d9d9;
-  --clock-hour-dark: #d9d9d9;
+  --brand-dark: hsl(0, 0%, 100%);
+  --menu-dark: hsl(0, 0%, 21%);
+  --toggle-bg-dark: hsl(204, 42%, 27%);
+  --toggle-inactive-dark: hsl(0, 0%, 100%);
+  --toggle-active-dark: hsl(183, 31%, 34%);
+  --angle-bottom-dark: hsl(0, 0%, 21%);
+  --angle-right-dark: hsl(183, 31%, 34%);
+  --angle-top-dark: hsl(204, 42%, 27%);
+  --clock-minute-dark: hsl(183, 31%, 34%);
+  --clock-second-dark: hsl(0, 0%, 85%);
+  --clock-hour-dark: hsl(0, 0%, 85%);
+
+  /* breaking bad */
+  --brand-breakingbad: hsl(141, 47%, 80%);
+  --menu-breakingbad: hsl(120, 68%, 11%);
+  --toggle-bg-breakingbad: hsl(138, 51%, 25%);
+  --toggle-inactive-breakingbad: hsl(141, 47%, 80%);
+  --toggle-active-breakingbad: hsl(29, 97%, 50%);
+  --angle-bottom-breakingbad: hsl(120, 68%, 11%);
+  --angle-right-breakingbad: hsl(138, 51%, 25%);
+  --angle-top-breakingbad: hsl(136, 49%, 31%);
+  --clock-minute-breakingbad: hsl(41, 91%, 79%);
+  --clock-second-breakingbad: hsl(29, 97%, 50%);
+  --clock-hour-breakingbad: hsl(41, 91%, 79%);
+
+  /* star wars */
+  --brand-starwars: hsl(61, 47%, 71%);
+  --menu-starwars: hsl(217, 63%, 13%);
+  --toggle-bg-starwars: hsl(206, 31%, 35%);
+  --toggle-inactive-starwars: hsl(61, 47%, 71%);
+  --toggle-active-starwars: hsl(214, 72%, 36%);
+  --angle-bottom-starwars: hsl(217, 63%, 13%);
+  --angle-right-starwars: hsl(206, 31%, 35%);
+  --angle-top-starwars: hsl(214, 72%, 36%);
+  --clock-minute-starwars: hsl(61, 47%, 71%);
+  --clock-second-starwars: hsl(348, 57%, 34%);
+  --clock-hour-starwars: hsl(61, 47%, 71%);
 }
 
 :root {
@@ -93,4 +119,34 @@
   --clock-minute: var(--clock-minute-dark);
   --clock-second: var(--clock-second-dark);
   --clock-hour: var(--clock-hour-dark);
+}
+
+.breakingbadmode {
+  /* breaking bad variant */
+  --brand: var(--brand-breakingbad);
+  --menu: var(--menu-breakingbad);
+  --toggle-bg: var(--toggle-bg-breakingbad);
+  --toggle-inactive: var(--toggle-inactive-breakingbad);
+  --toggle-active: var(--toggle-active-breakingbad);
+  --angle-bottom: var(--angle-bottom-breakingbad);
+  --angle-right: var(--angle-right-breakingbad);
+  --angle-top: var(--angle-top-breakingbad);
+  --clock-minute: var(--clock-minute-breakingbad);
+  --clock-second: var(--clock-second-breakingbad);
+  --clock-hour: var(--clock-hour-breakingbad);
+}
+
+.starwarsmode {
+  /* star wars variant */
+  --brand: var(--brand-starwars);
+  --menu: var(--menu-starwars);
+  --toggle-bg: var(--toggle-bg-starwars);
+  --toggle-inactive: var(--toggle-inactive-starwars);
+  --toggle-active: var(--toggle-active-starwars);
+  --angle-bottom: var(--angle-bottom-starwars);
+  --angle-right: var(--angle-right-starwars);
+  --angle-top: var(--angle-top-starwars);
+  --clock-minute: var(--clock-minute-starwars);
+  --clock-second: var(--clock-second-starwars);
+  --clock-hour: var(--clock-hour-starwars);
 }
