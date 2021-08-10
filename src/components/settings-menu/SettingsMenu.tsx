@@ -1,7 +1,7 @@
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 import { RootStateOrAny, useSelector } from 'react-redux';
+import useComponentVisible from '../../hooks/useComponentVisible';
 import './SettingsMenu.scss';
 import Switch from './switch/Switch';
 
@@ -24,13 +24,24 @@ const Menu = () => {
 };
 
 const SettingsMenu = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => setShowMenu(!showMenu);
+  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
 
   return (
     <div className="settings">
-      {showMenu ? <Menu /> : null}
-      <FontAwesomeIcon className="settings__icon" role="button" icon={faCog} onClick={toggleMenu} />
+      <div ref={ref}>{isComponentVisible ? <Menu /> : null}</div>
+
+      <div>
+        {!isComponentVisible && (
+          <FontAwesomeIcon
+            className="settings__icon"
+            role="button"
+            icon={faCog}
+            onClick={() => setIsComponentVisible(true)}
+          />
+        )}
+      </div>
+
+      <div ref={ref}>{isComponentVisible && <span>close</span>}</div>
     </div>
   );
 };
